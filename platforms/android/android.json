@@ -1,0 +1,224 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"com.rjfun.cordova.admob.AdMobPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+              "count": 1
+            },
+            {
+              "xml": "<amazon:enable-feature android:name=\"com.amazon.device.messaging\" android:required=\"false\" xmlns:amazon=\"http://schemas.amazon.com/apk/res/android\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:exported=\"false\" android:name=\"com.onesignal.ADMMessageHandler\" />",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.imabuilder.techeey.naaterasoolnaatlyrics\" /></intent-filter></receiver>",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 2
+            }
+          ],
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<permission android:name=\"com.imabuilder.techeey.naaterasoolnaatlyrics.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.imabuilder.techeey.naaterasoolnaatlyrics.permission.RECEIVE_ADM_MESSAGE\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
+    },
+    {
+      "id": "ionic-plugin-keyboard.keyboard",
+      "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+      "pluginId": "ionic-plugin-keyboard",
+      "clobbers": [
+        "cordova.plugins.Keyboard"
+      ],
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-admobpro.AdMob",
+      "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
+      "pluginId": "cordova-plugin-admobpro",
+      "clobbers": [
+        "window.AdMob"
+      ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open",
+        "window.open"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
+    },
+    {
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
+      "clobbers": [
+        "OneSignal"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-console": "1.1.0",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "2.4.2",
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-extension": "1.5.4",
+    "cordova-plugin-admobpro": "2.31.6",
+    "cordova-plugin-inappbrowser": "3.0.0",
+    "cordova-plugin-network-information": "2.0.1",
+    "onesignal-cordova-plugin": "2.4.2"
+  }
+}

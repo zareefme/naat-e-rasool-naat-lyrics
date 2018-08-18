@@ -1,0 +1,58 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar ng-show="$root.headerExists" id="navbar-right-top" class="page-title bar-dark">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+			</ion-nav-buttons>
+			<ion-nav-buttons side="right">
+				<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="fabButtonUp"></ion-nav-view>
+		<ion-nav-view animation="none" name="naat_e_rasool_naat_lyrics-side_menus"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left">
+		<ion-header-bar class="text-center expanded dark-bg">
+			<img ng-src="{{ appLogo | trustUrl }}" class="avatar motion spin fade" />
+			<div class="menu-bottom"><span ng-bind-html="appName | strHTML"></span><br/></div>
+		</ion-header-bar>
+		<ion-content class="has-expanded-header light-bg positive-900">
+			<ion-list class="list" >
+				<ion-item  class="menu-home item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close=""  ui-sref="naat_e_rasool_naat_lyrics.dashboard" >
+					<i class="icon ion-home"></i> {{ "Home" | translate }}
+				</ion-item>
+				<ion-item class="item item-divider text-left" >
+					 {{ "Naat e Rasool" | translate }}
+				</ion-item>
+				<ion-item  class="menu-categories item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.categories">
+					<i class="icon ion-social-buffer"></i> {{ "Naat Alphabet wise" | translate }}
+				</ion-item>
+				<ion-item  class="menu-posts item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.posts({categories:'-1'})">
+					<i class="icon ion-clipboard"></i> {{ "New Naats" | translate }}
+				</ion-item>
+				<ion-item  class="menu-youtube item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.youtube">
+					<i class="icon ion-social-youtube-outline"></i> {{ "Youtube" | translate }}
+				</ion-item>
+				<ion-item  class="menu-radio_naats item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.radio_naats">
+					<i class="icon ion-ios-people"></i> {{ "Radio Naats" | translate }}
+				</ion-item>
+				<ion-item  class="menu-post_bookmark item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.post_bookmark">
+					<i class="icon ion-android-favorite"></i> {{ "Saved Naats" | translate }}
+				</ion-item>
+				<ion-item class="item item-divider text-left" >
+					 {{ "Help" | translate }}
+				</ion-item>
+				<ion-item  class="menu-rate_this_app item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ng-click="openURL('market://details?id=com.imabuilder.techeey.naaterasoolnaatlyrics')">
+					<i class="icon ion-android-playstore"></i> {{ "Rate our app" | translate }}
+				</ion-item>
+				<ion-item  class="menu-faqs item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.faqs">
+					<i class="icon ion-ios-help"></i> {{ "FAQ" | translate }}
+				</ion-item>
+				<ion-item  class="menu-about_us item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="naat_e_rasool_naat_lyrics.about_us">
+					<i class="icon ion-help-buoy"></i> {{ "About us " | translate }}
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

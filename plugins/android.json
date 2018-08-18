@@ -1,0 +1,46 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.imabuilder.techeey.naaterasoolnaatlyrics"
+    }
+  }
+}

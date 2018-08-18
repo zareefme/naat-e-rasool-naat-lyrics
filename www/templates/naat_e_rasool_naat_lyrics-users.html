@@ -1,0 +1,39 @@
+	<ion-view view-title="Naat e Rasool" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-users" class=" page-users">
+		
+<div class="audioplayer-box">
+
+	<div class="audioplayer-card text-center">
+    
+        <div ng-if="users_toggle_state" class="audioplayer-logo">
+            <ion-spinner ng-if="state==0" class="audioplayer-spinner" icon="dots"></ion-spinner>
+            <ion-spinner ng-if="state==1" class="audioplayer-spinner" icon="ios-small"></ion-spinner>
+            <ion-spinner ng-if="state==2" class="audioplayer-spinner" icon="ios"></ion-spinner>
+            <ion-spinner ng-if="state==3" class="audioplayer-spinner" icon="ios"></ion-spinner>
+            <ion-spinner ng-if="state==4" class="audioplayer-spinner" icon="ripple"></ion-spinner>
+        </div>
+      
+        <div ng-if="!users_toggle_state" class="audioplayer-logo">
+            <div class="audioplayer-spinner">
+                <i class="ion-volume-mute"></i>
+            </div>
+        </div>
+      
+        <div class="audioplayer-title">
+        	<h3>Naat e Rasool</h3>       
+        </div>
+    		
+        <div class="text-center">
+    		<button class="button button-fab-large button-fab  button-assertive" ng-click="usersTogglePlay()">
+              <i ng-if="users_toggle_state" class="icon ion-play"></i>
+              <i ng-if="!users_toggle_state" class="icon ion-pause"></i>
+    		</button>
+    	</div>
+        
+	</div>
+</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
